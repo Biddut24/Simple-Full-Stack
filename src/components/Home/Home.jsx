@@ -4,16 +4,11 @@ import Loading from "../Shared/Loading/Loading";
 import { DataContextManagement } from "../../context/DataContext";
 
 const Home = () => {
-  const { users} = useContext(DataContextManagement);
-  
-  
+  const { users } = useContext(DataContextManagement);
 
   if (users?.length === 0) {
-    return <Loading/>
+    return <Loading />;
   }
-
-
-
 
   return (
     <div>
